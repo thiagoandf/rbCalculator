@@ -54,7 +54,7 @@ export default function Calculator(props) {
   const [currentValue, setCurrentValue] = React.useState('0');
   const [mem, setMem] = React.useState({ operator: '', value: '' });
 
-  const parser = str => Function(`'use strict'; return (${str})`)();
+  // const parser = str => Function(`'use strict'; return (${str})`)();
 
   const handleChange = value => {
     if (value.match(/^[0-9]*$/g)) {
